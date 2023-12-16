@@ -67,7 +67,7 @@ resolver = "2"
 
 [workspace.dependencies]
 # workspace crates
-ethers = { version = "2.0.11", path = "ethers", default-features = false }
+ethers = { path = "ethers", default-features = false }
 ethers-addressbook = { version = "2.0.11", path = "ethers-addressbook", default-features = false }
 ethers-contract = { version = "2.0.11", path = "ethers-contract", default-features = false }
 ethers-core = { version = "2.0.11", path = "ethers-core", default-features = false }

@@ -464,7 +464,7 @@ impl<P: JsonRpcClient> Middleware for Provider<P> {
     }
 
     async fn get_accounts(&self) -> Result<Vec<Address>, ProviderError> {
-        self.request("eth_accounts", ()).await
+        self.request("eth_requestAccounts", ()).await
     }
 
     async fn get_transaction_count<T: Into<NameOrAddress> + Send + Sync>(
